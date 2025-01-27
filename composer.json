@@ -2,15 +2,14 @@
     "name": "gearmagicru/gm-panel",
     "description": "GM Panel: GM Framework components",
     "keywords": [
-        "gm",
         "gearmagic",
-        "framework",
+        "gm2",
         "admin",
         "panel",
-        "components"
+        "framework component"
     ],
     "homepage": "https://gearmagic.ru",
-    "type": "gm-component",
+    "type": "component",
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -21,7 +20,7 @@
     ],
     "require": {
         "php": ">=8.2",
-        "gearmagicru/gm": "^2.0.0"
+        "gearmagicru/gm": "^2.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
