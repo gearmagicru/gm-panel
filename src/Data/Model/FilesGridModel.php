@@ -402,7 +402,7 @@ class FilesGridModel extends BaseGridModel
      */
     public function sortRows(Finder $builder, string $name = null, string $direction = null)
     {
-        if (!$builder->searched) {
+        if (!$builder::isSearched()) {
             return null;
         }
 
@@ -450,7 +450,7 @@ class FilesGridModel extends BaseGridModel
      */
     public function getTotalRows($receiver = null): int
     {
-        return $receiver && $receiver->searched ? $receiver->count() : 0;
+        return $receiver && $receiver::isSearched() ? $receiver->count() : 0;
     }
 
     /**
@@ -459,7 +459,7 @@ class FilesGridModel extends BaseGridModel
     public function getCountRows(): int
     {
         $builder = $this->getRowsBuilder();
-        return $builder && $builder->searched ? $builder->count() : 0;
+        return $builder && $builder::isSearched() ? $builder->count() : 0;
     }
 
     /**
@@ -467,7 +467,7 @@ class FilesGridModel extends BaseGridModel
      */
     public function fetchRows($receiver): array
     {
-        if (empty($receiver) || !$receiver->searched) return [];
+        if (empty($receiver) || !$receiver::isSearched()) return [];
 
         $rows = [];
         $index = 0;
