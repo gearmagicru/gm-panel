@@ -1,13 +1,7 @@
 {
     "name": "gearmagicru/gm-panel",
-    "description": "GM Panel: GM Framework components",
-    "keywords": [
-        "gearmagic",
-        "gm2",
-        "admin",
-        "panel",
-        "framework component"
-    ],
+    "description": "GM Framework component \"GM Panel\"",
+    "keywords": ["gearmagic", "gm-framework", "gm-framework-component", "framework", "component"],
     "homepage": "https://gearmagic.ru",
     "type": "component",
     "license": "BSD-3-Clause",
